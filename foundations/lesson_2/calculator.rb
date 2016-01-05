@@ -22,15 +22,16 @@ puts "Please enter an operation to perform, "
 puts "1) Add, 2) Subtract, 3) Multiply, 4) Divide"
 op = gets.chomp
 
-case op
-when '1'
-  puts add(num1, num2)
-when '2'
-  puts subtract(num1, num2)
-when '3'
-  puts multiply(num1, num2)
-when '4'
-  if num2 == 0 then puts "You cannot divide by zero!"
-  else puts divide(num1, num2)
-  end
-end
+result = case op
+         when '1'
+           add(num1, num2)
+         when '2'
+           subtract(num1, num2)
+         when '3'
+           multiply(num1, num2)
+         when '4'
+           if num2 == 0 then puts "You cannot divide by zero!"
+           else divide(num1, num2)
+           end
+         end
+puts result
