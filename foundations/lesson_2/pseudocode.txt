@@ -1,0 +1,43 @@
+# 1. a method that returns the sum of two integers
+
+START
+
+# Given two integers, num1 and num2
+
+result = num1 + num2
+PRINT result
+
+END
+
+
+# 2. a method that takes an array of strings and returns a string
+# that is all those strings concatenated together
+
+START
+
+# Given an array of strings, arr[]
+
+SET single_string = ""
+for each string in arr
+  add string to single_string
+
+PRINT single_string
+
+END
+  
+
+# 3. a method that takes an array of integers, 
+# and returns a new array with every other element
+
+START
+
+# Given an array of integers, arr[]
+
+SET new_arr = []
+for each integer in arr
+  add first element
+  skip over next element
+
+PRINT new_arr
+
+END
