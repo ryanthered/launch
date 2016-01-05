@@ -1,35 +1,35 @@
 def add(num1, num2)
-  num1 + num2
+  num1.to_i + num2.to_i
 end
 
 def subtract(num1, num2)
-  num1 - num2
+  num1.to_i - num2.to_i
 end
 
 def multiply(num1, num2)
-  num1 * num2
+  num1.to_i * num2.to_i
 end
 
 def divide(num1, num2)
-  num1 / num2
+  num1.to_f / num2.to_f
 end
 
 puts "Please enter the first number: "
-num1 = gets.chomp.to_i
+num1 = gets.chomp
 puts "Please enter the second number: "
-num2 = gets.chomp.to_i
+num2 = gets.chomp
 puts "Please enter an operation to perform, "
-puts "(Add, Subtract, Multiply, Divide)"
-op = gets.chomp.downcase
+puts "1) Add, 2) Subtract, 3) Multiply, 4) Divide"
+op = gets.chomp
 
 case op
-when 'add'
+when '1'
   puts add(num1, num2)
-when 'subtract'
+when '2'
   puts subtract(num1, num2)
-when 'multiply'
+when '3'
   puts multiply(num1, num2)
-when 'divide'
+when '4'
   if num2 == 0 then puts "You cannot divide by zero!"
   else puts divide(num1, num2)
   end
